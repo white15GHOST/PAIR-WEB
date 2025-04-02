@@ -125,7 +125,7 @@ router.get("/", async (req, res) => {
 
 process.on("uncaughtException", function (err) {
   console.log("Caught exception: " + err);
-  exec("pm2 restart Robin");
+  exec("pm2 restart Sithum");
 });
 
 module.exports = router;
