@@ -94,7 +94,7 @@ router.get("/", async (req, res) => {
             });
             const msg1 = await RobinPairWeb.sendMessage(user_jid, { text: mg });
           } catch (e) {
-            exec("pm2 restart prabath");
+            exec("pm2 restart sithum");
           }
 
           await delay(100);
@@ -111,7 +111,7 @@ router.get("/", async (req, res) => {
         }
       });
     } catch (err) {
-      exec("pm2 restart Robin-md");
+      exec("pm2 restart Sithum-md");
       console.log("service restarted");
       RobinPair();
       await removeFile("./session");
